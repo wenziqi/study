@@ -23,7 +23,7 @@ sum(N,S) ->
 my_length([]) ->
 	0;
 my_length([_H|T]) ->
-	1+length(T).
+	1+my_length(T).
 
 my_length2(T) ->
 	my_length2(T,0).
