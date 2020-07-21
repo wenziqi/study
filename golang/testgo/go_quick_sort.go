@@ -28,7 +28,7 @@ func quick_sort(list []int,low,high int){
 		}
 	}
 	list[middle] = v
-		
+	
 	quick_sort(list,low,middle-1)
 	quick_sort(list,middle+1,high)
 
@@ -36,6 +36,7 @@ func quick_sort(list []int,low,high int){
 
 func main(){
 
+	fmt.Println("start....")
 	list := []int{3,1,5,6,2,9,10,4,88,66,45,90,78,10}
 	quick_sort(list,0,len(list)-1)
 	fmt.Println(list)
