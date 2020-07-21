@@ -18,6 +18,9 @@ func randint(start,end int) int {
 
 func shufflelist(list []int){
 	size := len(list)
+	if size==0 {
+		return
+	}
 	for i:=0;i<=2*size;i++ {
 		j,k := randint(0,size),randint(0,size)
 		if j!=k {
