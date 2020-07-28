@@ -20,3 +20,11 @@ class CData(object):
 
 
 
+class CSaveData(CData):
+
+	def save(self):
+		return self._data
+
+	def load(self,data):
+		self._data = data
+
