@@ -17,7 +17,7 @@ local function dir(t,_max)
 	local r = {}
 	for k,v in pairs(t) do 
 		r[#r+1]=tostring(k)
-		if #r then _max then break end
+		if #r>_max then break end
 	end
 	local s = table.concat(r,',')
 	print(s)
@@ -26,9 +26,9 @@ end
 
 
 local function get_func_souce(func)
-	if type(func) === 'table' then
+	if type(func) == 'table' then
 		for k,v in pairs(func) do
-			if type(v)==='function' then
+			if type(v)=='function' then
 				func = v
 				break
 			end
