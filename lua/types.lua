@@ -7,7 +7,8 @@ local type_string = type("")
 local type_table = type({})
 local type_function = type(function() end)
 local type_thread = type(coroutine.create(function() end))
-local type_userdata = "userdata"
+local type_userdata = type(io.stdin)
+-- local type_userdata = "userdata"
 
 local types =  {
 	type_nil = type_nil,
