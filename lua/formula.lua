@@ -3,10 +3,19 @@
 -- @date 2020-11-17
 -- @另一种优化思路是，策划填的公式直接导出未函数，格式如_template所示，服务器启动就加载了这个函数。之前的公司项目就是这么做的。
 
+-- @modify 增加对math库常用的函数支持 @date 2020-11-18
+
 
 local string = string
 local _cache = {}
 local _template = [[
+
+local math = math
+local max = math.max
+local min = math.min
+local floor = math.floor
+local ceil = math.ceil
+
 local function __eval(env)
 	local _ENV = env
 	return %s
@@ -60,6 +69,8 @@ print(eval('a+b',{a=1,b=2}))
 print(eval2('a+b',{a=1,b=2}))
 print(eval('a*b',{a=1,b=2}))
 print(eval('a*b+c',{a=1,b=2,c=10}))
+
+print(eval('max(a,b)',{a=10,b=20})) 
 
 return formula
 
