@@ -157,6 +157,19 @@ function tableEx.iterItems(t,func)
 	end
 end
 
+function table.isEmpty(t)
+	if type(t) ~= 'table' or not _G.next(t) then
+		return false
+	end
+	return true
+end
+
+function table.clear(t)
+	for k,v in pairs(t) do
+		t[k] = nil
+	end
+end
+
 local function  test()
 	print(table.concat(tableEx.keys(tableEx),','))
 	print(tableEx.max({1,4,6,3,5,10,89}))
