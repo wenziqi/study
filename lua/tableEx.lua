@@ -157,17 +157,69 @@ function tableEx.iterItems(t,func)
 	end
 end
 
-function table.isEmpty(t)
+function tableEx.isEmpty(t)
 	if type(t) ~= 'table' or not _G.next(t) then
 		return false
 	end
 	return true
 end
 
-function table.clear(t)
+function tableEx.clear(t)
 	for k,v in pairs(t) do
 		t[k] = nil
 	end
+end
+
+function tableEx.unionSet(tA,tB)
+	local t = {}
+	for _,v in pairs(tA) do
+		t[v] = 1
+	end
+	for _,v in pairs(tB) do
+		t[v] = 1
+	end
+	local r = {}
+	for v,_ in pairs(t) do
+		r[#r+1] = v
+	end
+	return r
+end
+
+function tableEx.interSet(tA,tB)
+	local t = {}
+	for _v, in pairs(tA) do
+		t[v] = 1
+	end
+	local t2 = {}
+	for _,v in pairs(tB) do
+		if t[v] then
+			t2[v]=1
+		end
+	end
+	local r = {}
+	for v,_ in pairs(t2) do
+		r[#r+1] = v
+	end
+	return r
+end
+
+
+function tableEx.diffSet(tA,tB)
+	local t = {}
+	for _v, in pairs(tA) do
+		t[v] = 1
+	end
+	for _,v in pairs(tB) do
+		if t[v] then
+			t[v]=nil
+		end
+	end
+	local r = {}
+	for v,_ in pairs(t) do
+		r[#r+1] = v
+	end
+	return r
+
 end
 
 local function  test()
