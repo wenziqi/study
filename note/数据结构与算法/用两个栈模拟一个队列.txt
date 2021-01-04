@@ -1,0 +1,14 @@
+Stack：先进后出，FILO
+Queue:先进先出,  FIFO
+
+Stack A
+Stack B
+
+
+push:
+      直接将元素E压倒Stack A
+
+pop:
+     如果Stack B为空，则将Stack A所有的元素出栈，压倒Stack B
+     Stack B的栈顶元素取出
+

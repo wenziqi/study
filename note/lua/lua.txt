@@ -1,0 +1,38 @@
+1.nil,boolean,number,string,table,function,thread,userdata
+2.setmetatable,getmetatable
+3.pack,unpack
+4.元方法,__index,__newindex,__call,__tostring,__add,__sub
+5.type
+6.string.format,string.sub,string.gsub,string.byte,string.char,string.len,string.lower,string.upper,
+7.table.concat,table.insert,table.remove,table.sort
+8.next
+9.ipairs,pairs
+10.tostring,tonumber
+11.pcall,xpcall
+12.debug.sethook,debug.traceback,debug.getinfo,
+13.collectgarbage("count") --stat,stop,step,restart,collect
+14.math.max,math.min,math.floor,math.ceil,math.sig,math.pi,math.random
+15.assert(flag,msg)
+16.os.time,os.date
+17.io.open,io.popen,io.write,io.read
+18.lua 泛型for，闭包，迭代
+19.loadstring,dostring,load,dofile,loadfile
+20.error
+21.rawset，rawget  -- 无视原表的__index和__newindex
+
+22.module，require,package.loaded,package.seeall
+23module，package.seeall，5.1、5.2才有，其他版本没有
+
+> t=setmetatable({a=10},{__metatable = false})
+> print(getmetatable(t))
+false
+
+-------------------------
+研究lua源码
+lua垃圾回收机制
+userdata
+tread
+弱引用
+
+
+

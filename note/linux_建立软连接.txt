@@ -1,0 +1,6 @@
+In -s /root/bols /tmp   #建立软连接
+
+
+
+
+

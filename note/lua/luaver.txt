@@ -1,0 +1,9 @@
+$ git clone https://github.com/DhavalKapil/luaver.git
+sh install.sh
+
+
+luaver install 5.3.1             # Installs Lua version 5.3.1
+luaver install 5.3.0             # Installs Lua version 5.3.0
+luaver use 5.3.1                 # Switches to Lua version 5.3.1
+luaver install-luarocks 2.3.0    # Installs Luarocks version 2.3.0
+luaver uninstall 5.3.0           # Uninstalls Lua version 5.3.0

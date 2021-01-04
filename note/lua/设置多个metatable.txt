@@ -1,0 +1,26 @@
+Lua 5.1.5  Copyright (C) 1994-2012 Lua.org, PUC-Rio
+> mt1={a=10}
+> mt2={b=11}
+> t={}
+> setmetatable(t,mt1)
+> setmetatable(t,mt2)
+> print(t)
+table: 0x1d7e4f0
+> print(t.a)
+nil
+> print(t.b)
+nil
+> print(getmetatable(t))
+table: 0x1d7e1f0
+> print(getmetatable(t) == mt1)
+false
+> print(getmetatable(t) == mt2)
+true
+> print(getmetatable(t).b)
+11
+> print(t.b)
+nil
+> 
+
+
+-- 实验证明只能set一个metatable，会覆盖

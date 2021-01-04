@@ -1,0 +1,8 @@
+http://wiki.rabbitvcs.org/wiki/install/ubuntu    #可视化svn，unbuntu
+#ubuntu rabbitvcs
+sudo add-apt-repository ppa:rabbitvcs/ppa
+deb http://ppa.launchpad.net/rabbitvcs/ppa/ubuntu **DISTRIBUTION** main
+sudo apt-get update
+sudo apt-get install rabbitvcs-nautilus3
+
+nautilus -q    #start rabbitvcs

@@ -1,0 +1,8 @@
+https://blog.uwa4d.com/archives/usparkle_luaperformance.html
+https://blog.uwa4d.com/archives/2037.html
+https://springrts.com/wiki/Lua_Performance
+https://blog.csdn.net/jinxinliu1/article/details/80625878
+http://luaforge.net/docman/83/98/ANoFrillsIntroToLua51VMInstructions.pdf
+https://github.com/cloudwu/luaprofiler
+https://blog.codingnow.com/cloud/LuaBreakPoint
+https://github.com/luaforge/luaprofiler

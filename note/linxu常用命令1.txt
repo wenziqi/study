@@ -1,0 +1,16 @@
+ps aux | grep python
+sudo apt-get install XXX
+sudo apt-get update
+git clone https://github.com/cloudwu/skynet.git
+curl -R -O http://www.lua.org/ftp/lua-5.4.1.tar.gz
+tar zxf lua-5.4.1.tar.gz
+sudo add-apt-repository ppa:rabbitvcs/ppa
+deb http://ppa.launchpad.net/rabbitvcs/ppa/ubuntu **DISTRIBUTION** main
+kill -9 6028
+top
+wget https://luarocks.org/releases/luarocks-3.3.1.tar.gz
+ln -s /home/nomogaserver/ /home/rocky/nomogaserver
+rm -rf *
+cat benchmark`date '+%Y-%m-%d'`.log
+ls | sed "s:^:`pwd`/:"
+
